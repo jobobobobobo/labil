@@ -5,7 +5,15 @@
 Leafwing Ability System is a little undercooked, and projectharmonia already made a wonderful little input crate based on enhanced input system for unreal, so I want to port GAS to rust and maybe get it looking more ergonomic.
 ** Gameplay Ability System
 GAS is an unreal engine plugin that handles abilities and attributes for game characters. It is very powerful but very awkward.
+
+GAS uses a lot of containers and utility classes for making things move around smoothly. I really like a lot of those choices, so I think I want to keep them up.
 ** Artillery
 Artillery is the project associated with Bristlecone, which I'm implementing for =aeronet=, and it has a lot of perf advantages over GAS. Server compute will always be at a premium, so I want to make sure I'm just *sipping* power whenever possible.
 ** Leafwing Ability System
 An existing rust ability system.
+* Abilities
+Abilities are defined in a spec, which are then used to create an instance of that ability. The instance would have a reference to the spec as well as metadata like who the source is, and who the target is. The target can be either a cast of some sort, or it can be an entity. 
+* Attributes
+* Effects
+* Cues
+* Networking
