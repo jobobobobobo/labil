@@ -1,1 +1,11 @@
 #+TITLE: Labil Design Document
+
+* Preface
+** Motivations
+Leafwing Ability System is a little undercooked, and projectharmonia already made a wonderful little input crate based on enhanced input system for unreal, so I want to port GAS to rust and maybe get it looking more ergonomic.
+** Gameplay Ability System
+GAS is an unreal engine plugin that handles abilities and attributes for game characters. It is very powerful but very awkward.
+** Artillery
+Artillery is the project associated with Bristlecone, which I'm implementing for =aeronet=, and it has a lot of perf advantages over GAS. Server compute will always be at a premium, so I want to make sure I'm just *sipping* power whenever possible.
+** Leafwing Ability System
+An existing rust ability system.
